@@ -79,7 +79,7 @@ function draw() {
   
    if(gameState === PLAY){
      
-  score = score + Math.round(getFrameRate()/60);
+  score = score + Math.round(getFrameRate()/48);
  
      if (score>0 && score%100 === 0){
       checkpoint.play();
