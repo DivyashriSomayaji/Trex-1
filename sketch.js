@@ -8,7 +8,7 @@ var score = 0;
 
 var gameover, gameover1, restart, restart1;
 
-var jump,die,checkpoint
+var jump,die,checkpoint;
 
 //initiate Game STATEs
 var PLAY = 1;
@@ -81,9 +81,9 @@ function draw() {
      
   score = score + Math.round(getFrameRate()/48);
  
-     if (score>0 && score%100 === 0){
-      checkpoint.play();
-    }
+    // if (score>0 && score%100 === 0){
+      //checkpoint.play();
+  //  }
      
   //move the ground
     ground.velocityX = -(6 + 3*score/100); 
