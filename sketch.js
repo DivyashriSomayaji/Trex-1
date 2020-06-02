@@ -33,7 +33,7 @@ function preload(){
   restart1 = loadImage("restart.png");
   jump = loadSound("jump.mp3")
   die = loadSound("die.mp3")
-  checkpoint = loadSound("checkpoint.mp3")
+  checkpoint = loadSound("checkPoint.mp3")
 }
 
 function setup() {
