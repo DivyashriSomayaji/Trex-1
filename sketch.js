@@ -79,7 +79,7 @@ function draw() {
   
    if(gameState === PLAY){
      
-  score = score + Math.round(getFrameRate()/48);
+  score = score + Math.round(getFrameRate()/60);
  
      if (score>0 && score%100 === 0){
       checkpoint.play();
@@ -105,8 +105,9 @@ function draw() {
      
     //End the game when trex is touching the obstacle
     if(obstaclesGroup.isTouching(trex)){
-      die.play();
+      
       gameState = END;
+      die.play();
     }
   
 }
