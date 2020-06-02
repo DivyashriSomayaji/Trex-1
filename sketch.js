@@ -69,7 +69,7 @@ function setup() {
 }
 
 function draw() {
-  background(220);
+  background("white");
   
    text(score, 500,50);
   
